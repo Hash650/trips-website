@@ -38,6 +38,16 @@
             position: relative;
         }
 
+        /* Mobile/tablet adjustments */
+        @media (max-width: 768px) {
+            header {
+                background-position:left;
+                /* shift image so car stays visible */
+                background-attachment: scroll;
+                /* smoother scrolling on phones */
+            }
+        }
+
         /* Overlay for readability */
         header::before {
             content: "";
