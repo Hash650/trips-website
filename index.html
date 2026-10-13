@@ -196,6 +196,35 @@
                 font-size: 0.9rem;
             }
         }
+        
+/* Phone - Portrait */
+@media (max-width: 768px) and (orientation: portrait) {
+    header {
+        background-attachment: scroll;
+
+        /* Slight zoom allows vertical repositioning */
+        background-size: auto 105%;
+
+        /* Shift image left and upward */
+        background-position: 65% 75%;
+    }
+}
+
+/* Phone - Landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+    header {
+        background-attachment: scroll;
+
+        /* Display the entire image without cropping */
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        /* Fill unused space around the image */
+        background-color: #1a1a1a;
+    }
+}
+
     </style>
 </head>
 
